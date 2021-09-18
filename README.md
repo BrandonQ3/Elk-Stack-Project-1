@@ -102,3 +102,4 @@ sudo docker start (container name)
 sudo doker ps -a
 sudo docker attach (containe name)
 sudo ansible-playbook (.yml file)
+
