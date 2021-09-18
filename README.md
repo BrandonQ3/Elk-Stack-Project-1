@@ -53,7 +53,7 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | My public ip         |
+| Jump Box | Yes                 | My public IP         |
 | ELk      | No                  | 10.1.0.4             |
 | Webb-1   | No                  | 10.1.0.4             |
 | Webb-2   | No                  | 10.1.0.4             |
@@ -98,3 +98,7 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which URL do you navigate to in order to check that the ELK server is running? Public Ip:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+sudo docker start (container name)
+sudo doker ps -a
+sudo docker attach (containe name)
+sudo ansible-playbook (.yml file)
