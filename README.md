@@ -33,11 +33,11 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly reliable, in addition to restricting access/traffic to the network.
-- _TODO: Prevent failure caused overloading and rebalances traffic in the event of an attack. The  Jump Box is where a user can access the environmentuser connects from a single node and this is a more secure way of monitoring the environment. 
+Prevent failure caused overloading and rebalances traffic in the event of an attack. The  Jump Box is where a user can access the environmentuser connects from a single node and this is a more secure way of monitoring the environment. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-- _TODO: Monitors logs and events.
-- _TODO: Metricbeat collects metrics and statistics and sent the info to a chosen output location.
+Monitors logs and events.
+Metricbeat collects metrics and statistics and sent the info to a chosen output location.
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
@@ -54,9 +54,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump box provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Acces to this machine only allowd from my public ip.
+Acces to this machine only allowd from my public ip.
 Machines within the network can only be accessed by ssh.
-- _TODO: Which machine did you allow to access your ELK VM? Jumpbox What was its IP address?_ 10.0.0.4
+Which machine did you allow to access your ELK VM? Jumpbox What was its IP address?_ 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -70,7 +70,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_ Automation for tasks that can be time consuming and tedious and its open source tool 
+What is the main advantage of automating configuration with Ansible?_ Automation for tasks that can be time consuming and tedious and its open source tool 
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -81,7 +81,8 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Elk Docker](https://user-images.githubusercontent.com/84944319/133934898-ae1ab8e9-7676-45f8-ba27-9775a9a52281.jpg)
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
