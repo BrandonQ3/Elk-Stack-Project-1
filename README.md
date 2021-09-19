@@ -90,7 +90,13 @@ This ELK server is configured to monitor the following machines:
 Web-1 10.0.0.5 Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-Specify which Beats you successfully installed_ Filebeat and Metricbeat 
+Specify which Beats you successfully installed Filebeat and Metricbeat
+
+![project 1 Filebeat screenshot submit](https://user-images.githubusercontent.com/84944319/133935162-320423b2-62d9-405a-904c-21cfc2c7d76c.jpg)
+
+![project 1 Meticbeat screenshot submit](https://user-images.githubusercontent.com/84944319/133935181-25e4b2c2-080c-487f-a752-9986212dcb3f.jpg)
+
+
 
 These Beats allow us to collect the following information from each machine:
 In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._ Filebeat Filebeat will collect data on system and show changes made. Metricbeat will collect the metrics and statistics and show uptime.
