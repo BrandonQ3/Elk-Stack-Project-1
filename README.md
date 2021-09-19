@@ -11,15 +11,12 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-[elk.zip](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7192506/elk.zip)
-
- 
-[Filebeat.txt](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7192465/Filebeat.txt)
-
-[Metricbeat.txt](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7192469/Metricbeat.txt)
+![Elk](https://user-images.githubusercontent.com/84944319/133935696-98b49f5a-3e28-412c-9c93-80bbc10d971b.jpg)
+![Filebeat](https://user-images.githubusercontent.com/84944319/133935698-651c07fa-a946-4a7c-b2b7-d63270a77820.jpg)
+![Metricbeat](https://user-images.githubusercontent.com/84944319/133935699-4201fd64-908a-4182-bfd2-20d4cdc6156f.jpg)
 
 
-This document contains the following details:
+ This document contains the following details:
 - Description of the Topologu
 - Access Policies
 - ELK Configuration
