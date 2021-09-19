@@ -4,7 +4,8 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png![image]
+![BW Elk Stack Project Diagram Submit JPG](https://user-images.githubusercontent.com/84944319/133934596-47d57c29-96cc-4cb4-b0c4-080f70454bcb.jpg)
+
 
 
 
