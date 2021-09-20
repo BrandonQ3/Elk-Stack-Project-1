@@ -109,12 +109,12 @@ Answer the following questions to fill in the blanks:
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ /etc/ansible/hosts when configuring the filebeat.yml file you need to designate the Private IP of the Elk-Server in lines of the .yml file. 
 - Which URL do you navigate to in order to check that the ELK server is running? Public IP:5601
 
-As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-  Filebeat
-- To create the filebeat-configuration.yml file: nano filebeat-configuration.yml. For this, I used the filebeat configuration file template.
+Filebeat
+ - To create the filebeat-configuration.yml file: nano filebeat-configuration.yml. For this, I used the filebeat configuration file template.
 
-- To create the playbook: nano filebeat-playbook.yml
+ - To create the playbook: nano filebeat-playbook.yml
  ---
  - name: installing and launching filebeat
 	   hosts: webservers
