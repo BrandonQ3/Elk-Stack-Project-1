@@ -105,19 +105,17 @@ SSH into the control node and follow the steps below:
 
 
 Answer the following questions to fill in the blanks:
-- _Which file is the playbook? Where do you copy it? filebeat-playbook.yml etc/ansible/roles
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ /etc/ansible/hosts when configuring the filebeat.yml file you need to designate the Private IP of the Elk-Server in lines of the .yml file. 
-- _Which URL do you navigate to in order to check that the ELK server is running? Public IP:5601
+- Which file is the playbook? Where do you copy it? filebeat-playbook.yml etc/ansible/roles
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ /etc/ansible/hosts when configuring the filebeat.yml file you need to designate the Private IP of the Elk-Server in lines of the .yml file. 
+- Which URL do you navigate to in order to check that the ELK server is running? Public IP:5601
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
   Filebeat
-
 - To create the filebeat-configuration.yml file: nano filebeat-configuration.yml. For this, I used the filebeat configuration file template.
 
 - To create the playbook: nano filebeat-playbook.yml
-
-  ---
+ ---
  - name: installing and launching filebeat
 	   hosts: webservers
        become: true
@@ -146,11 +144,8 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 -To run the playbook: ansible-playbook filebeat-playbook.yml
 
 Metricbeat
-
 - To create the metricbeat-configuration.yml file: nano metricbeat-configuration.yml.
-
 - To create the playbool: nano metricbeat-playbook.yml
-
 ---
   - name: installing and lunching metricbeat
     hosts: webservers
