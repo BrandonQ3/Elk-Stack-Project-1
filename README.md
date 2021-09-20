@@ -32,7 +32,7 @@ Monitors logs and events.
 Metricbeat collects metrics and statistics and sent the info to a chosen output location.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
 
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
@@ -46,9 +46,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump box provisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-Acces to this machine only allowd from my public ip.
-Machines within the network can only be accessed by ssh.
-Which machine did you allow to access your ELK VM? Jumpbox What was its IP address?_ 10.0.0.4
+Acces to this machine only allowd from my public IP.
+Machines within the network can only be accessed by SSH.
+Which machine did you allow to access your ELK VM? Jumpbox What was its IP address? 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-What is the main advantage of automating configuration with Ansible?_ Automation for tasks that can be time consuming and tedious and its open source tool 
+What is the main advantage of automating configuration with Ansible? Automation for tasks that can be time consuming and tedious and its open source tool 
 
 The playbook implements the following tasks:
 - Install docker.io
@@ -91,7 +91,7 @@ Specify which Beats you successfully installed Filebeat and Metricbeat
 
 
 These Beats allow us to collect the following information from each machine:
-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._ Filebeat Filebeat will collect data on system and show changes made. Metricbeat will collect the metrics and statistics and show uptime.
+In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc. Filebeat Filebeat will collect data on system and show changes made. Metricbeat will collect the metrics and statistics and show uptime.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -99,13 +99,13 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file to roles directory.
 - Update the hosts file to include... webserver, IP's and elk.
-- Run the playbook, and navigate to htt:// ELK-VM Ip:5601/app/kibana Elto check that the installation worked as expected.
+- Run the playbook, and navigate to http:// ELK-VM IP:5601/app/kibana Elto check that the installation worked as expected.
 
 ![HTTP Kibana screenshot submit](https://user-images.githubusercontent.com/84944319/133935029-e9016e6d-94bc-4816-b88f-b0bc975cca50.jpg)
 
 
-Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_ filebeat-playbook.yml etc/ansible/roles
+Answer the following questions to fill in the blanks:
+- _Which file is the playbook? Where do you copy it? filebeat-playbook.yml etc/ansible/roles
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_ /etc/ansible/hosts when configuring the filebeat.yml file you need to designate the Private IP of the Elk-Server in lines of the .yml file. 
 - _Which URL do you navigate to in order to check that the ELK server is running? Public IP:5601
 
@@ -145,7 +145,6 @@ _As a **Bonus**, provide the specific commands the user will need to run to down
 
 -To run the playbook: ansible-playbook filebeat-playbook.yml
 
-
 Metricbeat
 
 - To create the metricbeat-configuration.yml file: nano metricbeat-configuration.yml.
@@ -180,6 +179,6 @@ Metricbeat
         
    - To run the playbook: ansible-playbook metricbeat-playbook.yml
    
- to run the playbook, you have to be in the directory the playbook is at.
+   to run the playbook, you have to be in the directory the playbook is at.
 
 
