@@ -57,7 +57,6 @@ Elk
           - 5601:5601
           - 9200:9200
           - 5044:5044
-
 Filebeat
 ---
 - name: installing and launching filebeat
@@ -89,7 +88,6 @@ Filebeat
     systemd:
       name: filebeat
       enabled: yes
-
 Metricbeat
 ---
 - name: Install metricbeat
