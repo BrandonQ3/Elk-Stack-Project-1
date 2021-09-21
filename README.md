@@ -128,6 +128,6 @@ cd /etc/ansible
 
 mkdir files
 
-get clone https://github.com/BrandonQ3/Elk-Stack-Project-1.git
+get clone (https://github.com/BrandonQ3/Elk-Stack-Project-1.git)
 
 cd/Elk-Stack-Project-1/README/roles/* /etc/ansible
