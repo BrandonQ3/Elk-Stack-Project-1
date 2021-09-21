@@ -85,7 +85,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-Web-1 10.0.0.5 Web-2 10.0.0.6
+Web-1 10.0.0.5 
+Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 Specify which Beats you successfully installed Filebeat and Metricbeat
@@ -116,7 +117,7 @@ Answer the following questions to fill in the blanks:
 -  filebeat-config.yml
 -  Determine which machine to install by revising the host files with IP addresses of elk/webservers and choosing which group to run in Ansible.
 
-- Which URL do you navigate to in order to check that the ELK server is running? https://[public IP address of Elk VM]/app/kibana
+- Which URL do you navigate to in order to check that the ELK server is running? (https://[public IP address of Elk VM]/app/kibana)
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
