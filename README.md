@@ -19,17 +19,18 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 
 
-
 ### Description of the Topology
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly reliable, in addition to restricting access/traffic to the network.
-Prevent failure caused overloading and rebalances traffic in the event of an attack. The  Jump Box is where a user can access the environmentuser connects from a single node and this is a more secure way of monitoring the environment. 
+Load balancers protect against DDos attacks. So if one server goes down then the load balancer redistrubtes work to other servers keeping the whole system from going down. An advantage of a jump box is that you have to connect to it first in order to do any administrative task. You can also use it to streamline maintenance of a system by only having to update the jumpbox.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-Monitors logs and events.
-Metricbeat collects metrics and statistics and sent the info to a chosen output location.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the file system and system metrics.
+
+Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticserach or Logstash for indexing.
+
+Metricbeat helps monitor servers by collecting metrics from the system and services runnign on the server.
+
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table.
@@ -37,9 +38,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
-| ELK      | Elk Server| 10.1.0.4   | Linux            |
-| Web-1    | Webserver| 10.0.0.5   | Linux            |
-| Web-2    | Webserver | 10.0.0.6   | Linux            |
+| ELK-VM      | Elk Server| 10.1.0.4   | Linux            |
+| Web-1    | Server| 10.0.0.5   | Linux            |
+| Web-2    | Server | 10.0.0.6   | Linux            |
 
 ### Access Policies
 
@@ -50,7 +51,7 @@ Acces to this machine only allowd from my public IP.
 Machines within the network can only be accessed by SSH.
 
 JumpBoxProvisioner
-Public IP 
+Public IP: 20.94.249.7
 Private IP: 10.1.0.4
 
 Which machine did you allow to access your ELK VM? Jumpbox What was its IP address? 10.0.0.4
@@ -59,10 +60,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes                 | My public IP         |
-| ELk      | No                  | 10.1.0.4             |
-| Webb-1   | No                  | 10.1.0.4             |
-| Webb-2   | No                  | 10.1.0.4             |
+| Jump Box | Yes                 |  20.94.249.7        |
+| ELK-VM      | No                  | 10.1.0.4             |
+| Webb-1   | No                  | 10.0.0.5             |
+| Webb-2   | No                  | 10.0.0.6             |
 
 ### Elk Configuration
 
@@ -102,16 +103,19 @@ In 1-2 sentences, explain what kind of data each beat collects, and provide 1 ex
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the playbook file to roles directory.
-- Update the hosts file to include... webserver, IP's and elk.
-- Run the playbook, and navigate to http:// ELK-VM IP:5601/app/kibana#home to check that the installation worked as expected.
+- Copy the playbook file Ansible Control Node .
+- Update the hosts file to include... Webserver and Elk 
+- Run the playbook, and navigate to (http://ELK-VM PublicIP:5601/app/kibana#/home) to check that the installation worked as expected.
 
 ![HTTP Kibana screenshot submit](https://user-images.githubusercontent.com/84944319/133935029-e9016e6d-94bc-4816-b88f-b0bc975cca50.jpg)
 
 
 Answer the following questions to fill in the blanks:
 - Which file is the playbook? Where do you copy it? filebeat-playbook.yml etc/ansible/roles
-- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? /etc/ansible/hosts when configuring the filebeat.yml file You need to designate the Private IP of the Elk-Server in nano of the .yml file. 
+- Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+-  filebeat-config.yml
+-  Determine which machine to install by revising the host files with IP addresses of elk/webservers and choosing which group to run in Ansible.
+
 - Which URL do you navigate to in order to check that the ELK server is running? https://[public IP address of Elk VM]/app/kibana
 
 As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
