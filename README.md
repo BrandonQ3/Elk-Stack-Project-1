@@ -105,7 +105,7 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the playbook file Ansible Control Node .
 - Update the hosts file to include... Webserver and Elk 
-- Run the playbook, and navigate to (http://ELK-VM PublicIP:5601/app/kibana#/home) to check that the installation worked as expected.
+- Run the playbook, and navigate to (http://ELK-VMPublicIP:5601/app/kibana#/home) to check that the installation worked as expected.
 
 ![HTTP Kibana screenshot submit](https://user-images.githubusercontent.com/84944319/133935029-e9016e6d-94bc-4816-b88f-b0bc975cca50.jpg)
 
