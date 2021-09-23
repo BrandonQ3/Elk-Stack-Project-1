@@ -13,7 +13,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 [Elk.yaml](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198699/Elk.yaml)
 
-[Filebeat.yaml](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198712/Filebeat.yaml)
+[Filebeat.yaml](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198712/Filebeat.txt)
 
 [Metricbeat.yaml](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198718/Metricbeat.txt)
 
