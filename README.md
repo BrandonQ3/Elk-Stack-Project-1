@@ -11,7 +11,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-[Elk.txt](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198699/Elk.txt)
+[Elk.txt](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198699/Elk.yaml)
 
 [Filebeat.txt](https://github.com/BrandonQ3/Elk-Stack-Project-1/files/7198712/Filebeat.txt)
 
