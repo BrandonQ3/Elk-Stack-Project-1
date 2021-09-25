@@ -21,7 +21,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancers protect against DDos attacks. So if one server goes down then the load balancer redistrubtes work to other servers keeping the whole system from going down. An advantage of a jump box is that you have to connect to it first in order to do any administrative task. You can also use it to streamline maintenance of a system by only having to update the jumpbox.
 
@@ -29,7 +29,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticserach or Logstash for indexing.
 
-Metricbeat helps monitor servers by collecting metrics from the system and services runnign on the server.
+Metricbeat helps monitor servers by collecting metrics from the system and services running on the server.
 
 
 The configuration details of each machine may be found below.
@@ -101,7 +101,7 @@ Specify which Beats you successfully installed Filebeat and Metricbeat
 
 
 These Beats allow us to collect the following information from each machine:
-In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc. Filebeat Filebeat will collect data on system and show changes made. Metricbeat will collect the metrics and statistics and show uptime.
+In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc. Filebeat will collect data on system and show changes made. Metricbeat will collect the metrics and statistics and show uptime.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
