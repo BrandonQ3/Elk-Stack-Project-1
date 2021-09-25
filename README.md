@@ -53,7 +53,6 @@ Machines within the network can only be accessed by SSH.
 JumpBoxProvisioner
 
 -Public IP: 20.94.249.7
-
 -Private IP: 10.1.0.4
 
 Which machine did you allow to access your ELK VM? Jumpbox What was its IP address? 10.0.0.4
