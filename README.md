@@ -51,7 +51,6 @@ Acces to this machine only allowd from my public IP.
 Machines within the network can only be accessed by SSH.
 
 JumpBoxProvisioner
-
 -Public IP: 20.94.249.7
 -Private IP: 10.1.0.4
 
